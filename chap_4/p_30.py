@@ -22,5 +22,9 @@ def read_mecab(file):
         morphs = []
     return results
 
-results = read_mecab('neko.txt.mecab')
-print(results[:3])
+def main():
+    results = read_mecab('neko.txt.mecab')
+    print(results[:3])
+
+if __name__ == '__main__':
+    main()
