@@ -1,3 +1,7 @@
 venv_nlp
 jawiki-country.json
 __pycache__
+neko.txt
+neko.txt.mecab
+mecab-ipadic-neologd
+.DS_Store
