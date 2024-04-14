@@ -16,3 +16,8 @@ valid, test = train_test_split(valid_test, test_size=0.5)
 train[['CATEGORY', 'TITLE']].to_csv('train.txt', sep='\t', index=False)
 valid[['CATEGORY', 'TITLE']].to_csv('valid.txt', sep='\t', index=False)
 test[['CATEGORY', 'TITLE']].to_csv('test.txt', sep='\t', index=False)
+
+print('【Category distribution】')
+print('train:', train['CATEGORY'].value_counts())
+print('valid:', valid['CATEGORY'].value_counts())
+print('test:', test['CATEGORY'].value_counts())
