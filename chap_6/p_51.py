@@ -1,15 +1,5 @@
 from sklearn.feature_extraction.text import CountVectorizer
 import pandas as pd
-import re
-
-def Process(lines):
-    sign_regrex = re.compile('[!"#$%&\'()*+,-./:;<=>?@[\\]^_`|＄＃＠£â€™é\n]')
-    lines = sign_regrex.sub("", lines)
-    lines = re.sub("(\d+)", r" \1 ", lines)
-    texts = lines.split(" ")
-    texts = list(filter(lambda x:x, texts))
-    word_list = list(map(lambda x:x.lower(), texts))
-    return word_list
 
 train = pd.read_csv('train.txt', sep='\t')
 valid = pd.read_csv('valid.txt', sep='\t')
