@@ -12,3 +12,6 @@ news+aggregator
 test.txt
 train.txt
 valid.txt
+test.feature.txt
+train.feature.txt
+valid.feature.txt
